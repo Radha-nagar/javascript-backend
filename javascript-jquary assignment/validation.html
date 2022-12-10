@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>validation</title>
+     <script type="text/javascript">
+        function validate()
+        {
+           pin=document.getElementById('pin').value
+           mobile=document.getElementById('mobile').value
+           pass=document.getElementById('pass').value
+           cpass=document.getElementById('cpass').value
+        //    var reg=/^[7-9]${0,8}/
+
+           if(pin.length<1)
+           {
+               alert("pincode number is required")
+               return false
+           }
+           if(isNaN (pin))
+           {
+               alert("Enter only numeric value")
+               return false
+           }
+           if(mobile.length<1)
+           {
+               alert("mobile no. is required")
+               return false
+           }
+           if(isNaN (mobile))
+           {
+               alert("Enter only digits")
+               return false
+           }
+           if(mobile.length!=10)
+           {
+               alert("enter only 10 digit")
+               return false
+           }
+        //    if(mobile!=9 && 8 &&7)
+        //    {
+        //        alert("please start with 9/8/7")
+        //    }
+           if(pass.length<1)
+           {
+               alert("password is required")
+               return false
+           }
+           if(cpass.length<1)
+           {
+               alert("confirm password is required")
+               return false
+           }
+           if(pass!=cpass)
+           {
+              alert("password are not same")
+           }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <tr>
+            <td>Pincode:</td>
+            <input type="text" id="pin"><br>
+        </tr>
+        <tr>
+            <td>Mobile no:</td>
+            <input type="text" id="mobile"><br>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <input type="password" id="pass"><br>
+        </tr>
+        <tr>
+            <td>confirm password:</td>
+            <input type="password" id="cpass"><br>
+        </tr>
+        <input type="button" value="click" onclick="validate()">
+    </form>
+</body>
+</html>

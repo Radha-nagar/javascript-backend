@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>regex</title>
+    <script type="text/javascript">
+        function validation()
+        {
+            name = document.getElementById("name").value
+            var reg = /[a-z]/
+            if (reg.test(name))
+            {
+                alert("valid data")
+                return true;
+            }
+            else
+            {
+                alert("invalid data")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" id="name" onclick="validation">
+                </td>
+            </tr>
+            <!-- <input type="submit" id="btn" value="clickme!!" > -->
+    </form>
+</body>
+</html>

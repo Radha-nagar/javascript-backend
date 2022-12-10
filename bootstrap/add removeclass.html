@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>using css</title>
+    <style type="text/css">
+        .msg
+        {
+            background-color:rgb(76, 184, 160);color:rgb(20, 13, 13);font-size:50px
+        }
+        </style>
+        <script type="text/javascript" src="jquary.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("h1").addClass("msg")
+            })
+
+            $("#btn2").click(function(){
+                $("h1").removeClass("msg")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">apply_css</button> 
+    <button id="btn2">remove_css</button>
+    <h1>welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome</h1>
+</body>
+</html>

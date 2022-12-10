@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>using css</title>
+    <script type="text/javascript" src="jquary.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("h1").css({"background-color":"orange","color":"brown","font-size":"50px"})
+            })
+
+            $("#btn2").click(function(){
+                $("h1").css({"background-color":"","color":"","font-size":""})
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">apply_css</button>
+    <button id="btn2">remove_css</button>
+    <h1>welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome
+        welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome</h1>
+</body>
+</html>

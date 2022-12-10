@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validation</title>
+    <script type="text/javascript">
+          function check()
+          {
+            name=document.getElementById('name').value
+             pwd=document.getElementById('pwd').value
+             cpwd=document.getElementById('cpwd').value
+             mbe=document.getElementById('mbe').value
+             if(name.length<1)
+            {
+                 alert("name is required")
+                return false
+            }
+            if(pwd.length<1)
+            {
+                alert("password is required")
+                return false
+            }
+            if(cpwd.length<1)
+            {
+                alert("confirm password is required")
+                return false
+            }
+            if(pwd!=cpwd)
+            {
+                alert("password are not same")
+                return false
+            }
+            if(mbe.length!=10)
+            {
+                alert("enter 10 digit mobile number")
+                return false
+            }
+            // if(isNAN(mobile))
+            // {
+            //     alert("enter only digit")
+            //     return NAN
+            // }
+            return true
+          }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Enter name:</td>
+                <td>
+                <input type="text" id="name" ><br>
+                </td>
+            </tr>  
+            
+            <tr>
+                <td>Enter password:</td>
+            <td><input type="password" id="pwd" ><br>
+            </tr>
+            <tr>
+                <td>Enter Confirm password:</td>
+                <td><input type="password" id="cpwd"></td>
+            </tr>
+            <tr>
+                <td>Enter mobile no.</td>
+                <td><input type="text" id="mbe"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+              <input type="submit" name="btn" value="clickme!!" onclick= " return check()">
+                </td>
+            </tr>
+        </table>
+    </form>
+  
+</body>
+</html>

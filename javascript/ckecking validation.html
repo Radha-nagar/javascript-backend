@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validation</title>
+    <script type="text/javascript">
+        function validation(){
+            name=document.getElementById('name').value
+            
+            pwd=document.getElementById('pwd').value
+            if(name.length<1)
+            {
+                document.getElementById('error_name').innerHTML=" name required";
+                document.getElementById('error_name').style.color="red"
+            }
+            // else
+            // {
+            //     document.getElementById('error_name').innerHTML="";
+            //     document.getElementById('error_pwd').style.color="blue"
+                
+            // }
+
+            if(pwd.length<1)
+            {
+                document.getElementById('error_pwd').innerHTML=" pass required"
+                document.getElementById('error_pwd').style.color="red"
+            }
+            // else
+            // {
+            //     document.getElementById('error_pwd').innerHTML=""
+            // }
+        }
+        
+    </script>
+</head>
+<body>
+    <form action="#">
+        <table >
+            <tr>
+                <td>Name:<input type="text" id="name" placeholder="Enter name:" > </td>
+               <td><p id="error_name"></p> </td>
+            </tr>
+            <tr>
+            <td>password:<input type="password" id="pwd" placeholder="Enter password:"></td>
+              <td>  <p id="error_pwd"></p> </td>
+            </tr>
+          <td><input type="submit" value="clickme!!" onclick="validation()" > </td>
+        </table>
+        </form>
+   
+</body>
+</html>

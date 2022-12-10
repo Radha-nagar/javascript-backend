@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>flavor choosen</title>
+      <script type="text/javascript">
+           function Chocolate()
+           {
+                 flavor=document.getElementById('flavor').value
+                 if(flavor==Chocolate)
+                 {
+                    alert("you picked[flavor chosen].")
+                 }
+           }
+      </script>
+</head>
+<body align="center">
+    <td>Select a flavor<id="flavor" ></td><br>
+    <select>
+        <!-- <option>You picked[flavor chosen]</option> -->
+        <option>Vanilla</option>
+        <option>Chocolate</option>
+        <option>Strawberry</option>
+        <option>Cookies & Cream</option>
+        <option>Mint Chocolate Chip</option>
+        <option>Chocolate Chip Cookie Dough</option>
+        <option>Buttered Pecan</option>
+        <option>Birthday Cake</option>
+    </select>
+    <input type="button" value="choose" onkeyup="Chocolate()">
+</body>
+</html>
